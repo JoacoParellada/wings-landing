@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -58,7 +59,7 @@ export const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "WINGS S.A.S",
-  image: "/public/logo-wings.jpg",
+  image: "/logo-wings.jpg",
   "@id": "https://wingselectric.com.ar",
   url: "https://wingselectric.com.ar",
   telephone: "+54-261-527-5304",
@@ -127,6 +128,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <Head>
+        <link rel="icon" href="/logo-wings.png" />{" "}
+        <meta property="og:image" content="/logo-wings.jpg"></meta>
+      </Head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
