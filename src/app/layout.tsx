@@ -58,7 +58,7 @@ export const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "WINGS S.A.S",
-  image: "https://wingselectric.com.ar/logo.png",
+  image: "/public/logo-wings.jpg",
   "@id": "https://wingselectric.com.ar",
   url: "https://wingselectric.com.ar",
   telephone: "+54-261-527-5304",
